@@ -28,7 +28,8 @@ const IconList = styled.div`
     color: inherit;
   }
   i {
-    font-size: 2rem;
+    font-size: 5rem;
     cursor: pointer;
+    color: white;
   }
 `;
