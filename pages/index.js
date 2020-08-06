@@ -2,8 +2,7 @@ import Head from "next/head";
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
-import Icons from "./components/Icons";
-import Nav from "./components/Nav";
+import LandingPage from "./LandingPage";
 
 export default function Home() {
   return (
@@ -11,33 +10,19 @@ export default function Home() {
       <Head>
         <title>Jimena Angel</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
         <link
           rel="stylesheet"
           href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         ></link>
       </Head>
       <GlobalStyle />
-      <Body>
-        <Container>
-          <img className="background" src="/img/sand.png" alt="jimena" />
-          <div className="content">
-            <Header>
-              <Icons />
-            </Header>
-            <Nav />
-            <ImgContainer>
-              <div>
-                <img
-                  className="dancing-avatar"
-                  src="/img/jimena-sand.png"
-                  alt="jimena"
-                />
-                {/* <Logo src="/img/logo.png" alt="jimena" /> */}
-              </div>
-            </ImgContainer>
-          </div>
-        </Container>
-      </Body>
+      <body>
+        <LandingPage />
+      </body>
     </>
   );
 }
@@ -55,6 +40,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: apercu-bold;
   src: url("fonts/apercu/bold.otf");
   };
+  body {
+    margin: 0;
+    background: black
+  }
 `;
 
 const Body = styled.body`
@@ -66,28 +55,18 @@ const Body = styled.body`
 const Header = styled.div`
   display: flex;
   justify-content: center;
-  img {
-    height: 50px;
-  }
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Container = styled.div`
-  .background {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .content {
-    position: relative;
-  }
+  background-color: black;
+  width: 100%;
+  height: 100%;
 `;
 
 const Logo = styled.img`
-  position: absolute;
-  height: 3rem;
-  bottom: 0;
-  left: 0;
+  height: 10rem;
   filter: invert(100%);
 `;
 

@@ -28,7 +28,9 @@ const IconList = styled.div`
     color: inherit;
   }
   i {
-    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     cursor: pointer;
     color: white;
   }
