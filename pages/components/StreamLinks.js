@@ -28,6 +28,7 @@ function StreamLinks(props) {
 const StreamLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 90%;
   h1 {
     font-size: 1.2rem;
   }
@@ -37,6 +38,7 @@ const StreamLinksContainer = styled.div`
   img {
     width: 100%;
     margin-bottom: 2rem;
+    max-width: 600px;
   }
   div {
     display: flex;
