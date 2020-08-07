@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-import Icons from "./components/Icons";
-import Nav from "./components/Nav";
+import Icons from "./Icons";
+import Nav from "./Nav";
+import Layout from "./Layout";
 
 function LandingPage(props) {
   return (
-    <Container>
-      <Logo src="/img/logo.png" alt="jimena" />
+    <Layout title={"Jimena Angel"}>
+      <Container>
+        <Logo src="/img/logo.png" alt="jimena" />
 
-      <PicContainer>
-        <JimenaPic src="/img/jimena-sand.png" alt="jimena" />
-        <h1>JIMENA ANGEL</h1>
-        <Nav />
-      </PicContainer>
-      <Icons />
-    </Container>
+        <PicContainer>
+          <JimenaPic src="/img/jimena-sand.png" alt="jimena" />
+          <h1>JIMENA ANGEL</h1>
+          <Nav />
+        </PicContainer>
+        <Icons />
+      </Container>
+    </Layout>
   );
 }
 
@@ -42,6 +45,7 @@ const Container = styled.div`
   justify-content: center;
   position: relative;
   color: #d2e1dd;
+  background: black;
 `;
 
 const JimenaPic = styled.img`
@@ -51,7 +55,7 @@ const Logo = styled.img`
   filter: invert(100%);
   height: 1em;
   position: absolute;
-  bottom: 0;
+  bottom: 1rem;
 `;
 
 export default LandingPage;

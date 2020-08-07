@@ -1,11 +1,14 @@
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 
 export default function Nav() {
   return (
     <NavList>
       <span>Listen</span>
-      <span>About</span>
+      <Link href="/bio">
+        <span>About</span>
+      </Link>
     </NavList>
   );
 }
