@@ -2,13 +2,10 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 
-export default function Nav() {
+export default function Nav(props) {
   return (
     <NavList>
-      <a
-        href="https://open.spotify.com/playlist/0JGjs0YPhn2XfrINwH1m51?si=OoelDU1QQwmOagkfoo6cbQ"
-        target="_blank"
-      >
+      <a onClick={props.openModal}>
         <span>Listen</span>
       </a>
       <Link href="/bio">

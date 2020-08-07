@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import Modal from "react-modal";
 
 import Icons from "./Icons";
 import Nav from "./Nav";
 import Layout from "./Layout";
+import StreamLinks from "./StreamLinks";
 
 function LandingPage(props) {
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <Layout title={"Jimena Angel"}>
       <Container>
@@ -14,10 +23,18 @@ function LandingPage(props) {
         <PicContainer>
           <JimenaPic src="/img/jimena-sand2.jpg" alt="jimena" />
           <h1>JIMENA ANGEL</h1>
-          <Nav />
+          <Nav openModal={openModal} />
         </PicContainer>
         <Icons />
       </Container>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <StreamLinks closeModal={closeModal} />
+      </Modal>
     </Layout>
   );
 }
@@ -57,5 +74,16 @@ const Logo = styled.img`
   position: absolute;
   bottom: 1rem;
 `;
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 export default LandingPage;
