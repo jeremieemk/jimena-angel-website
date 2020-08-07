@@ -43,5 +43,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: apercu-bold;
     width: 100%;
     margin: 0px;
+    box-sizing: border-box;
+    background: black;
+    @media (min-width: 801px) {
+      padding: 0 30%
+    }
   }
 `;
