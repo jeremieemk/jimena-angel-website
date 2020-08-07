@@ -12,7 +12,7 @@ function LandingPage(props) {
         <Logo src="/img/logo.png" alt="jimena" />
 
         <PicContainer>
-          <JimenaPic src="/img/jimena-sand.png" alt="jimena" />
+          <JimenaPic src="/img/jimena-sand2.jpg" alt="jimena" />
           <h1>JIMENA ANGEL</h1>
           <Nav />
         </PicContainer>
