@@ -4,25 +4,28 @@ import styled from "styled-components";
 export default function Nav() {
   return (
     <NavList>
-      <li>About</li>
-      <li>Listen</li>
+      <span>Listen</span>
+      <span>About</span>
     </NavList>
   );
 }
 
-const NavList = styled.ul`
+const NavList = styled.div`
   padding-inline-start: 0;
   display: flex;
-  width: 100%;
+  flex-direction: column;
   justify-content: center;
   margin-block-start: 0;
   margin-block-end: 0;
-  li {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  span {
     cursor: pointer;
-    font-size: 2em;
+    font-size: 1.5em;
+    background: black;
     text-transform: uppercase;
-    list-style: none;
     color: white;
-    margin: 1rem;
+    padding: 0.3rem;
   }
 `;

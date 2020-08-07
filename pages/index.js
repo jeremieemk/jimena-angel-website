@@ -20,9 +20,7 @@ export default function Home() {
         ></link>
       </Head>
       <GlobalStyle />
-      <body>
-        <LandingPage />
-      </body>
+      <LandingPage />
     </>
   );
 }
@@ -42,14 +40,11 @@ const GlobalStyle = createGlobalStyle`
   };
   body {
     margin: 0;
-    background: black
+    background: black;
+    font-family: apercu-bold;
+    width: 100%;
+    margin: 0px;
   }
-`;
-
-const Body = styled.body`
-  font-family: apercu-bold;
-  width: 100%;
-  margin: 0px;
 `;
 
 const Header = styled.div`
