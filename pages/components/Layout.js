@@ -49,4 +49,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 0 30%
     }
   }
+  a {
+    text-decoration: none
+  }
 `;

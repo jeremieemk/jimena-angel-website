@@ -5,7 +5,12 @@ import styled from "styled-components";
 export default function Nav() {
   return (
     <NavList>
-      <span>Listen</span>
+      <a
+        href="https://open.spotify.com/playlist/0JGjs0YPhn2XfrINwH1m51?si=OoelDU1QQwmOagkfoo6cbQ"
+        target="_blank"
+      >
+        <span>Listen</span>
+      </a>
       <Link href="/bio">
         <span>About</span>
       </Link>
