@@ -4,7 +4,12 @@ import styled from "styled-components";
 function StreamLinks(props) {
   return (
     <StreamLinksContainer onClick={props.closeModal}>
-      <img src="/img/bestof.jpg" alt="playlist cover art" />
+      <a
+        href="https://open.spotify.com/artist/1K0Pin4AUnN7GVGJaS7z0E"
+        target="_blank"
+      >
+        <img src="/img/bestof.jpg" alt="playlist cover art" />
+      </a>
 
       <div>
         <a
