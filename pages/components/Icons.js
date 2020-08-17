@@ -21,7 +21,7 @@ export default function Icons(props) {
       </a>
       <i
         onClick={() => props.openModal("newsletter")}
-        class="las la-envelope"
+        className="las la-envelope"
       ></i>
     </IconList>
   );
