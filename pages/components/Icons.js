@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function Icons() {
+export default function Icons(props) {
   return (
     <IconList>
       <a
@@ -19,6 +19,10 @@ export default function Icons() {
       <a href="https://www.youtube.com/user/jimenangel1" target="_blank">
         <i className="lab la-youtube"></i>
       </a>
+      <i
+        onClick={() => props.openModal("newsletter")}
+        class="las la-envelope"
+      ></i>
     </IconList>
   );
 }
@@ -34,5 +38,6 @@ const IconList = styled.div`
     font-size: 3rem;
     cursor: pointer;
     color: white;
+    margin-left: 0.5rem;
   }
 `;

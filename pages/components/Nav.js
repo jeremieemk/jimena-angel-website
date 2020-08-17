@@ -12,7 +12,7 @@ export default function Nav(props) {
         <span>About</span>
       </Link>
       <a onClick={() => props.openModal("newsletter")}>
-        <span>SIGN UP</span>
+        <span>Sign Up</span>
       </a>
     </NavList>
   );

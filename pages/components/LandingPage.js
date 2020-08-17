@@ -27,7 +27,7 @@ function LandingPage() {
           <h1>JIMENA ANGEL</h1>
           <Nav openModal={openModal} />
         </PicContainer>
-        <Icons />
+        <Icons openModal={openModal} />
       </Container>
       <Modal
         isOpen={modalName != null}
