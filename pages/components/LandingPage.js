@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Modal from "react-modal";
 
@@ -6,15 +6,17 @@ import Icons from "./Icons";
 import Nav from "./Nav";
 import Layout from "./Layout";
 import StreamLinks from "./StreamLinks";
+import NewsletterSignUp from "./NewsletterSignUp";
 
-function LandingPage(props) {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-  function openModal() {
-    setIsOpen(true);
+function LandingPage() {
+  const [modalName, setModalName] = useState(null);
+  function openModal(name) {
+    setModalName(name);
   }
   function closeModal() {
-    setIsOpen(false);
+    setModalName(null);
   }
+
   return (
     <Layout title={"Jimena Angel"}>
       <Container>
@@ -28,12 +30,15 @@ function LandingPage(props) {
         <Icons />
       </Container>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={modalName != null}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <StreamLinks closeModal={closeModal} />
+        {modalName === "streamlinks" && <StreamLinks closeModal={closeModal} />}
+        {modalName === "newsletter" && (
+          <NewsletterSignUp closeModal={closeModal} />
+        )}
       </Modal>
     </Layout>
   );

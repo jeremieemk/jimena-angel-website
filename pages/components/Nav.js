@@ -5,12 +5,15 @@ import styled from "styled-components";
 export default function Nav(props) {
   return (
     <NavList>
-      <a onClick={props.openModal}>
+      <a onClick={() => props.openModal("streamlinks")}>
         <span>Listen</span>
       </a>
       <Link href="/bio">
         <span>About</span>
       </Link>
+      <a onClick={() => props.openModal("newsletter")}>
+        <span>SIGN UP</span>
+      </a>
     </NavList>
   );
 }

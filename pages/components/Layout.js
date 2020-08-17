@@ -38,6 +38,10 @@ const GlobalStyle = createGlobalStyle`
   font-family: apercu-bold;
   src: url("fonts/apercu/bold.otf");
   };
+  @font-face {
+  font-family: taki;
+  src: url("fonts/taki.otf");
+  };
   body {
     margin: 0;
     font-family: apercu-bold;
