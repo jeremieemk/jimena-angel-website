@@ -49,6 +49,7 @@ const PicContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  display: inline-block;
   h1 {
     position: absolute;
     top: 0;
@@ -72,7 +73,6 @@ const Container = styled.div`
 
 const JimenaPic = styled.img`
   max-width: 100%;
-  height: auto;
 `;
 const Logo = styled.img`
   filter: invert(100%);
