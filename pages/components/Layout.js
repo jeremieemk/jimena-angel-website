@@ -6,6 +6,19 @@ function Layout(props) {
   return (
     <>
       <Head>
+        <meta property="og:type" content="website" />
+        <meta name="og:title" property="og:title" content="Jimena Angel" />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="The Official Website of Jimena Angel"
+        />
+        <meta property="og:site_name" content="Jimena Angel" />
+        <meta property="og:url" content="http://www.jimenaangel.com/" />
+        <meta
+          name="description"
+          content="The Official Website of Jimena Angel"
+        />
         <title>{props.title}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
