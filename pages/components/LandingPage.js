@@ -71,7 +71,8 @@ const Container = styled.div`
 `;
 
 const JimenaPic = styled.img`
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 `;
 const Logo = styled.img`
   filter: invert(100%);
