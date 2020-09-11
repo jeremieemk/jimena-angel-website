@@ -36,6 +36,7 @@ function LinkButton(props) {
             margin-bottom: 0.5rem;
             cursor: pointer;
             font-size: 0.6rem;
+            border: 1px solid white;
           }
 
           .spotify {

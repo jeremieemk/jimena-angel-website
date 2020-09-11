@@ -32,15 +32,18 @@ export default function Component(props) {
     <Layout title={"Jimena Angel - Llamameya"}>
       <Pixel name="FACEBOOK_PIXEL_1" />
       <Container>
-        <h1>JIMENA ANGEL - Llamameya</h1>
         <img src="/img/llamameya.jpg" alt="" />
-        {buttonProps.map((buttonProps) => (
-          <LinkButton
-            streamingService={buttonProps[0]}
-            streamingServiceLogo={buttonProps[1]}
-            streamingServiceLink={buttonProps[2]}
-          />
-        ))}
+        <h1>JIMENA ANGEL</h1>
+        <h2>llamameya</h2>
+        <div className="streaming-buttons">
+          {buttonProps.map((buttonProps) => (
+            <LinkButton
+              streamingService={buttonProps[0]}
+              streamingServiceLogo={buttonProps[1]}
+              streamingServiceLink={buttonProps[2]}
+            />
+          ))}
+        </div>
       </Container>
     </Layout>
   );
@@ -49,18 +52,31 @@ export default function Component(props) {
 const Container = styled.div`
   h1,
   h2 {
-    color: black;
+    color: white;
     font-family: apercu-bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 7px;
+    margin-top: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-family: apercu;
+    margin-bottom: 2rem;
   }
   width: 100%;
   height: 100%;
-  background: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  height: 100vh;
   img {
     height: auto;
-    width: 10rem;
+    width: 15rem;
   }
 `;
