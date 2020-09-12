@@ -25,6 +25,10 @@ export default class MyDocument extends Document {
         <Head>
           <title>My page</title>
           <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-3"
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-3"></script>
               <script>
