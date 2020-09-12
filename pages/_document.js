@@ -24,6 +24,17 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <title>My page</title>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-3"></script>
+              <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-115969774-3');
+              </script>]`,
+            }}
+          />
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>
