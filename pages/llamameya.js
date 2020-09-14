@@ -21,7 +21,11 @@ export default function Component(props) {
     //   "/img/bandcamp-small.png",
     //   "https://buffer.com/resources/facebook-instagram-stories-ads/",
     // ],
-    // ["YOUTUBE", "/img/youtube-small.png", ""],
+    [
+      "YOUTUBE",
+      "/img/youtube-small.png",
+      "https://www.youtube.com/watch?v=ZU9KGwSrkOg",
+    ],
     [
       "DEEZER",
       "/img/deezer-small.png",

@@ -23,6 +23,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          {/* google tags manager tracking code */}
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,6 +33,7 @@ export default class MyDocument extends Document {
                 })(window,document,'script','dataLayer','GTM-5F7DK2H');`,
             }}
           />
+          {/* google analytics tracking code */}
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-3"
