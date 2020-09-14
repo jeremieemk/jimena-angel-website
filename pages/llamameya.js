@@ -60,6 +60,7 @@ const Container = styled.div`
     font-family: taki;
     margin-block-start: 0;
     margin-block-end: 0;
+    text-align: center;
   }
   h1 {
     font-size: 2rem;
