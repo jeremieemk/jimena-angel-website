@@ -24,7 +24,7 @@ export default function Component(props) {
     [
       "YOUTUBE",
       "/img/youtube-small.png",
-      "https://www.youtube.com/watch?v=ZU9KGwSrkOg",
+      "https://www.youtube.com/watch?v=ZU9KGwSrkOggit add .",
     ],
     [
       "DEEZER",
@@ -38,7 +38,7 @@ export default function Component(props) {
       <Container>
         <img src="/img/llamameya.jpg" alt="" />
         <h1>JIMENA ANGEL</h1>
-        <h2>llamameya</h2>
+        <h2>Listen to her new single "Llamameya"</h2>
         <div className="streaming-buttons">
           {buttonProps.map((buttonProps) => (
             <LinkButton
@@ -57,7 +57,7 @@ const Container = styled.div`
   h1,
   h2 {
     color: white;
-    font-family: apercu-bold;
+    font-family: taki;
     margin-block-start: 0;
     margin-block-end: 0;
   }

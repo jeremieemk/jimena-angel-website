@@ -23,7 +23,7 @@ function LinkButton(props) {
           }
           .button-link {
             border-radius: 1rem;
-            font-family: var(--font1);
+            font-family: taki;
             color: white;
             background-color: black;
             border: none;
@@ -35,7 +35,7 @@ function LinkButton(props) {
             align-items: center;
             margin-bottom: 0.5rem;
             cursor: pointer;
-            font-size: 0.6rem;
+            font-size: 0.5rem;
             border: 1px solid white;
           }
 
