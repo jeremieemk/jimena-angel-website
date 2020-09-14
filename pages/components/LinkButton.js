@@ -1,11 +1,14 @@
 function LinkButton(props) {
+  const buttonLinkClasses = props.small
+    ? "button-link button-small"
+    : "button-link";
   return (
     <a
       href={props.streamingServiceLink && props.streamingServiceLink}
       target="_blank"
     >
       <div className="button-link-container">
-        <div className="button-link">
+        <div className={buttonLinkClasses}>
           <img
             className="spotify"
             src={props.streamingServiceLogo}
@@ -65,9 +68,15 @@ function LinkButton(props) {
               padding: 0.5rem;
               height: 1.5rem;
             }
+
             .arrow-fwd {
               padding: 0.5rem;
             }
+          }
+          .button-small {
+            width: 9rem;
+            height: 2rem;
+            font-size: 0.55rem;
           }
         `}</style>
       </div>
