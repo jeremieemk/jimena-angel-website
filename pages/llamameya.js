@@ -3,6 +3,7 @@ import styled from "styled-components";
 import LinkButton from "./components/LinkButton";
 import Layout from "./components/Layout";
 import Pixel from "./components/Pixel";
+import { motion } from "framer-motion";
 
 export default function Component(props) {
   const [pictureIndex, setPictureIndex] = useState(0);
@@ -43,18 +44,32 @@ export default function Component(props) {
         i = 0;
       }
       setPictureIndex(i);
-    }, 1000);
+    }, 1500);
     return () => {
       clearInterval(loop);
     };
   }, []);
 
   const imageSource = `/img/carousel${pictureIndex + 1}.jpg`;
+  const variants = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
   return (
     <Layout title={"Jimena Angel - Llamameya"}>
       <Pixel name="FACEBOOK_PIXEL_1" />
       <Container>
-        <img src={imageSource} alt="" />
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+          transition={{ ease: "easeOut", duration: 1 }}
+          key={pictureIndex}
+          className="picture-container"
+        >
+          <img src={imageSource} alt="" />
+        </motion.div>
+
         <h1>JIMENA ANGEL</h1>
         <h2>Listen to her new single "Llamameya"</h2>
         <div className="streaming-buttons">
@@ -102,10 +117,20 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  .picture-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   img {
-    height: auto;
-    height: 20rem;
-    max-width: 90%;
+    height: 30rem;
+    width: 30rem;
+    max-width: 100%;
     object-fit: cover;
+    border-radius: 5px;
+    @media (max-height: 640px) {
+      height: 20rem;
+      width: 20rem;
+    }
   }
 `;
