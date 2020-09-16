@@ -57,6 +57,8 @@ const PicContainer = styled.div`
     margin-block-start: 0;
     background: black;
     padding: 0.3rem;
+    font-size: 1.5em;
+    text-align: center;
   }
 `;
 
@@ -69,6 +71,7 @@ const Container = styled.div`
   position: relative;
   color: #d2e1dd;
   background: black;
+  font-family: taki;
 `;
 
 const JimenaPic = styled.img`

@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     background: black;
-    font-family: apercu-bold;
+    font-family: taki;
     width: 100%;
     margin: 0px;
   }

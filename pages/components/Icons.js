@@ -35,7 +35,7 @@ const IconList = styled.div`
   i {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     color: white;
     margin-left: 0.5rem;

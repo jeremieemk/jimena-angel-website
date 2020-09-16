@@ -28,6 +28,7 @@ const NavList = styled.div`
   position: absolute;
   left: 0;
   bottom: 0;
+  font-size: 0.7em;
   span {
     cursor: pointer;
     font-size: 1.5em;
