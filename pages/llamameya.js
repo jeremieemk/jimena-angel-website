@@ -61,6 +61,7 @@ const Container = styled.div`
     margin-block-start: 0;
     margin-block-end: 0;
     text-align: center;
+    max-width: 95%;
   }
   h1 {
     font-size: 2rem;
@@ -73,13 +74,16 @@ const Container = styled.div`
     margin-bottom: 2rem;
   }
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  @media (max-height: 640px) {
+    height: 100%;
+    padding-top: 2rem;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  height: 100vh;
   img {
     height: auto;
     width: 15rem;
