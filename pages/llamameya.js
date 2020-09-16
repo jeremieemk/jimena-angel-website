@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import LinkButton from "./components/LinkButton";
 import Layout from "./components/Layout";
 import Pixel from "./components/Pixel";
 
 export default function Component(props) {
+  const [pictureIndex, setPictureIndex] = useState(0);
   const buttonProps = [
     [
       "SPOTIFY",
@@ -32,11 +33,28 @@ export default function Component(props) {
       "https://www.deezer.com/fr/album/166378242",
     ],
   ];
+
+  useEffect(() => {
+    let i = 0;
+    const loop = setInterval(function () {
+      if (i < 5) {
+        i++;
+      } else {
+        i = 0;
+      }
+      setPictureIndex(i);
+    }, 1000);
+    return () => {
+      clearInterval(loop);
+    };
+  }, []);
+
+  const imageSource = `/img/carousel${pictureIndex + 1}.jpg`;
   return (
     <Layout title={"Jimena Angel - Llamameya"}>
       <Pixel name="FACEBOOK_PIXEL_1" />
       <Container>
-        <img src="/img/llamameya.jpg" alt="" />
+        <img src={imageSource} alt="" />
         <h1>JIMENA ANGEL</h1>
         <h2>Listen to her new single "Llamameya"</h2>
         <div className="streaming-buttons">
@@ -86,6 +104,8 @@ const Container = styled.div`
   color: white;
   img {
     height: auto;
-    width: 15rem;
+    height: 20rem;
+    max-width: 90%;
+    object-fit: cover;
   }
 `;
