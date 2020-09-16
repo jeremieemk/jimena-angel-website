@@ -48,7 +48,15 @@ export default function Component(props) {
             />
           ))}
         </div>
-        <video className="video-loop" autoPlay loop muted>
+        <video
+          className="video-loop"
+          autoPlay
+          playsinline
+          data-autoplay
+          webkit-playsinline
+          loop
+          muted
+        >
           <source
             src="https://drive.google.com/uc?export=download&id=1L9H9iFxZgpC0akGqGPB8eWIcigDB5FBs"
             type="video/mp4"
