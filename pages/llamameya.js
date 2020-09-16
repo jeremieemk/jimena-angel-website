@@ -129,8 +129,8 @@ const Container = styled.div`
     object-fit: cover;
     border-radius: 5px;
     @media (max-height: 640px) {
-      height: 20rem;
-      width: 20rem;
+      height: 18rem;
+      width: 18rem;
     }
   }
 `;
