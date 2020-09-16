@@ -38,7 +38,7 @@ export default function Component(props) {
   useEffect(() => {
     let i = 0;
     const loop = setInterval(function () {
-      if (i < 5) {
+      if (i < 3) {
         i++;
       } else {
         i = 0;
