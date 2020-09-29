@@ -15,7 +15,7 @@ export default function Component(props) {
   }
 
   return (
-    <Layout title={"Jimena Angel - Yengo Lo Que Tengo"}>
+    <Layout title={"Jimena Angel - Tengo Lo Que Tengo"}>
       <Pixel name="FACEBOOK_PIXEL_1" />
       <Container>
         <div className="picture-container">
@@ -30,7 +30,6 @@ export default function Component(props) {
           <Mailchimp
             fireDownload={fireDownload}
             action="https://facebook.us15.list-manage.com/subscribe/post?u=cef5e2d57bfb301e0ec0176fb&amp;id=1f708c5fed"
-            
             className="mailchimp"
           />
         </div>
