@@ -4,11 +4,25 @@ import PropTypes from "prop-types";
 
 class Mailchimp extends React.Component {
   state = {};
+  fields = [
+    {
+      name: "FNAME",
+      placeholder: "Your Name",
+      type: "text",
+      required: false,
+    },
+    {
+      name: "EMAIL",
+      placeholder: "Your Email",
+      type: "email",
+      required: true,
+    },
+  ];
 
   handleSubmit(evt) {
     evt.preventDefault();
-    const { fields, action } = this.props;
-    const values = fields
+    const { action } = this.props;
+    const values = this.fields
       .map((field) => {
         return `${field.name}=${encodeURIComponent(this.state[field.name])}`;
       })
@@ -39,7 +53,7 @@ class Mailchimp extends React.Component {
   }
 
   render() {
-    const { fields, styles, className, buttonClassName } = this.props;
+    const { styles, className, buttonClassName } = this.props;
     const messages = {
       ...Mailchimp.defaultProps.messages,
       ...this.props.messages,
@@ -48,7 +62,7 @@ class Mailchimp extends React.Component {
 
     return (
       <form onSubmit={this.handleSubmit.bind(this)} className={className}>
-        {fields.map((input) => (
+        {this.fields.map((input) => (
           <input
             {...input}
             key={input.name}

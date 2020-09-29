@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import LinkButton from "./components/LinkButton";
 import Layout from "./components/Layout";
 import Pixel from "./components/Pixel";
 import Mailchimp from "./components/Mailchimp";
@@ -31,20 +30,7 @@ export default function Component(props) {
           <Mailchimp
             fireDownload={fireDownload}
             action="https://facebook.us15.list-manage.com/subscribe/post?u=cef5e2d57bfb301e0ec0176fb&amp;id=1f708c5fed"
-            fields={[
-              {
-                name: "FNAME",
-                placeholder: "Your Name",
-                type: "text",
-                required: false,
-              },
-              {
-                name: "EMAIL",
-                placeholder: "Your Email",
-                type: "email",
-                required: true,
-              },
-            ]}
+            
             className="mailchimp"
           />
         </div>
