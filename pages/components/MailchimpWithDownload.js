@@ -2,7 +2,7 @@ import React from "react";
 import jsonp from "jsonp";
 import PropTypes from "prop-types";
 
-class Mailchimp extends React.Component {
+class MailchimpWithDownload extends React.Component {
   state = {};
   fields = [
     {
@@ -137,4 +137,4 @@ Mailchimp.propTypes = {
   buttonClassName: PropTypes.string,
 };
 
-export default Mailchimp;
+export default MailchimpWithDownload;

@@ -2,7 +2,7 @@ import React from "react";
 import Mailchimp from "react-mailchimp-form";
 import styled from "styled-components";
 
-function MailchimpForm(props) {
+function SignUpForm(props) {
   return (
     <Container>
       <Mailchimp
@@ -50,4 +50,4 @@ const Container = styled.div`
   }
 `;
 
-export default MailchimpForm;
+export default SignUpForm;
