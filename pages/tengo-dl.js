@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Layout from "./components/Layout";
 import Pixel from "./components/Pixel";
-import Mailchimp from "./components/Mailchimp";
+import MailchimpWithDownload from "./components/MailchimpWithDownload";
 
 export default function Component(props) {
   const [showSignUp, setShowSignup] = useState(true);
@@ -27,7 +27,7 @@ export default function Component(props) {
           Tengo Lo Que Tengo <span>(free download)</span>
         </h2>
         <div className="streaming-buttons">
-          <Mailchimp
+          <MailchimpWithDownload
             fireDownload={fireDownload}
             action="https://facebook.us15.list-manage.com/subscribe/post?u=cef5e2d57bfb301e0ec0176fb&amp;id=1f708c5fed"
             className="mailchimp"

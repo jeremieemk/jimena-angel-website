@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import MailchimpForm from "./MailchimpForm";
+import SignUpForm from "./SignUpForm";
 
 function NewsletterSignUp(props) {
   return (
     <Container>
       <h1>Keep in touch!</h1>
-      <MailchimpForm />
+      <SignUpForm />
     </Container>
   );
 }
