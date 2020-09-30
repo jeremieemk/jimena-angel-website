@@ -55,7 +55,7 @@ class MailchimpWithDownload extends React.Component {
   render() {
     const { styles, className, buttonClassName } = this.props;
     const messages = {
-      ...Mailchimp.defaultProps.messages,
+      ...MailchimpWithDownload.defaultProps.messages,
       ...this.props.messages,
     };
     const { status } = this.state;
@@ -101,7 +101,7 @@ class MailchimpWithDownload extends React.Component {
   }
 }
 
-Mailchimp.defaultProps = {
+MailchimpWithDownload.defaultProps = {
   messages: {
     sending: "Sending...",
     success: "Thank you for subscribing!",
@@ -127,7 +127,7 @@ Mailchimp.defaultProps = {
   },
 };
 
-Mailchimp.propTypes = {
+MailchimpWithDownload.propTypes = {
   onSignedUp: PropTypes.func,
   action: PropTypes.string,
   messages: PropTypes.object,

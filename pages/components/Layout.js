@@ -72,4 +72,52 @@ const GlobalStyle = createGlobalStyle`
       color: inherit
     }
   }
+  .button-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-link {
+    border-radius: 1rem;
+    font-family: taki;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: 0.5rem;
+    border: 1px solid white;
+  }
+  .button-small {
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.55rem;
+  }
+  .arrow-fwd {
+    padding: 0.3rem;
+    height: 1.5rem;
+    width: auto;
+  }
+  @media (min-width: 801px) {
+    .button-link {
+      border-radius: 1.5rem;
+      width: 17rem;
+      height: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .arrow-fwd {
+      padding: 0.5rem;
+    }
+  }
 `;
