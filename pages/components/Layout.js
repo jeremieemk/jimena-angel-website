@@ -91,7 +91,7 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     border: 1px solid white;
   }
   .button-small {

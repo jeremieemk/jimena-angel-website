@@ -64,7 +64,7 @@ export default function Component(props) {
               className="button-link-container"
               onClick={() => setShowSignup(true)}
             >
-              <div className="button-link">
+              <div className="button-link free-download-link">
                 <img src="/img/download2.png" className="download-icon" />
                 <p>FREE DOWNLOAD</p>
                 <img
@@ -103,11 +103,15 @@ const Container = styled.div`
     font-size: 2rem;
     letter-spacing: 7px;
     margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   h2 {
     font-size: 1.3rem;
     font-family: apercu;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    @media (max-height: 640px) {
+      font-size: 1rem;
+    }
   }
   width: 100%;
   height: 100vh;
@@ -117,14 +121,15 @@ const Container = styled.div`
   }
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: white;
+  margin-bottom: 4rem;
   .picture-container {
     width: 100%;
     display: flex;
     justify-content: center;
     img {
+      margin-top: 2rem;
       height: 20rem;
       width: 20rem;
       max-width: 100%;
@@ -141,7 +146,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     input {
       margin: 0.5rem;
       border: 1px solid black;
@@ -162,5 +167,8 @@ const Container = styled.div`
   .download-icon {
     padding: 0.5rem;
     height: 1.5rem;
+  }
+  .free-download-link {
+    margin-bottom: 2rem;
   }
 `;
