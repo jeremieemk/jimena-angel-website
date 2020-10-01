@@ -161,7 +161,7 @@ const Container = styled.div`
       display: flex;
       font-size: 0.8rem;
       justify-content: center;
-      @media (max-height: 800px) {
+      @media (max-width: 800px) {
         font-size: 0.5rem;
       }
     }
