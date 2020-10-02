@@ -11,12 +11,12 @@ export default function Component(props) {
     [
       "SPOTIFY",
       "/img/spotify.png",
-      "https://open.spotify.com/track/5GXDGIDBKExQB53nfWcBaz?si=u3pG2CDNQXuSDR2y_3VU3A",
+      "https://open.spotify.com/track/1uu604md59h9zaP27tegVV?si=3-ahu5VOSZSgVkLWXYDFUA",
     ],
     [
       "APPLE MUSIC",
       "/img/apple.png",
-      "https://music.apple.com/us/album/llamameya-single/1527268347",
+      "https://music.apple.com/mx/album/tengo-lo-que-tengo-single/1528743390",
     ],
     // [
     //   "BANDCAMP",
@@ -26,12 +26,12 @@ export default function Component(props) {
     [
       "YOUTUBE",
       "/img/youtube-small.png",
-      "https://www.youtube.com/watch?v=ZU9KGwSrkOggit add .",
+      "https://www.youtube.com/watch?v=mnNoyA5U6tc",
     ],
     [
       "DEEZER",
       "/img/deezer-small.png",
-      "https://www.deezer.com/fr/album/166378242",
+      "https://www.deezer.com/br/album/168548472",
     ],
   ];
   function fireDownload() {
