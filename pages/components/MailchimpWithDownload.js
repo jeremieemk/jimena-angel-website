@@ -39,9 +39,11 @@ class MailchimpWithDownload extends React.Component {
   sendData(url) {
     this.setState({ status: "sending" });
     jsonp(url, { param: "c" }, (err, data) => {
-      if (data.msg.includes("already subscribed")) {
-        this.setState({ status: "duplicate" });
-      } else if (err) {
+      // uncomment to prevent re-subscribing
+      // if (data.msg.includes("already subscribed")) {
+      //   this.setState({ status: "duplicate" });
+      // } else 
+      if (err) {
         this.setState({ status: "error" });
       } else if (data.result !== "success") {
         this.setState({ status: "error" });
