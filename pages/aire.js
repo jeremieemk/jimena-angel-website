@@ -18,11 +18,6 @@ export default function Component(props) {
       "/img/apple.png",
       "https://music.apple.com/us/album/aire-ep/1534395433",
     ],
-    // [
-    //   "BANDCAMP",
-    //   "/img/bandcamp-small.png",
-    //   "https://buffer.com/resources/facebook-instagram-stories-ads/",
-    // ],
     [
       "YOUTUBE",
       "/img/youtube-small.png",
@@ -33,13 +28,12 @@ export default function Component(props) {
       "/img/deezer-small.png",
       "https://www.deezer.com/br/album/177171542",
     ],
+    [
+      "BANDCAMP",
+      "/img/bandcamp-small.png",
+      "https://jimenaangel.bandcamp.com/album/aire",
+    ],
   ];
-  function fireDownload() {
-    const link = document.createElement("a");
-    link.href = "/music/tengoloquetengo.mp3";
-    link.setAttribute("download", "");
-    link.click();
-  }
 
   return (
     <Layout title={"Jimena Angel - Tengo Lo Que Tengo"}>
