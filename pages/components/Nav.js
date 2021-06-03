@@ -5,9 +5,9 @@ import styled from "styled-components";
 export default function Nav(props) {
   return (
     <NavList>
-      <a onClick={() => props.openModal("streamlinks")}>
+      <Link href="/aire">
         <span>Listen</span>
-      </a>
+      </Link>
       <Link href="/bio">
         <span>About</span>
       </Link>
