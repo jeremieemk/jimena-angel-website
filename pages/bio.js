@@ -50,7 +50,7 @@ function Bio(props) {
         <p>
           In 2009 she released a first solo album “Dia Azul” and was nominated
           for a Latin Grammy in the "Best Female Vocal Album of the Year"
-          category. Experimenting more and more with elctronic / organic
+          category. Experimenting more and more with electronic / organic
           tropical sounds, she released a second album “Todo Reverdece” in 2014
           and took part in Lulacruza and Vincent Moon’s experimental visual
           album “Esperando el Tsunami”.
