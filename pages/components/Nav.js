@@ -5,9 +5,9 @@ import styled from "styled-components";
 export default function Nav(props) {
   return (
     <NavList>
-      <Link href="/aire">
+      <a href="https://ampl.ink/E91OQ" target="_blank">
         <span>Listen</span>
-      </Link>
+      </a>
       <Link href="/bio">
         <span>About</span>
       </Link>

@@ -23,7 +23,7 @@ function LandingPage() {
         <Logo src="/img/logo.png" alt="jimena" />
 
         <PicContainer>
-          <JimenaPic src="/img/jimena-sand2.jpg" alt="jimena" />
+          <JimenaPic src="/img/jimena-platano.jpeg" alt="jimena" />
           <h1>JIMENA ANGEL</h1>
           <Nav openModal={openModal} />
         </PicContainer>

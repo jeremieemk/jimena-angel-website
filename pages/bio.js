@@ -6,7 +6,7 @@ function Bio(props) {
   return (
     <Layout title={"About"}>
       <BioContainer>
-        <img src="/img/jimena-camera.jpg" alt="jimena" />
+        <img src="/img/jimena-platano2.jpeg" alt="jimena" />
         <p>
           After a musical career spanning over two decades as a pop singer in
           her native Colombia, Mexico and the USA, Jimena picked up the call of
