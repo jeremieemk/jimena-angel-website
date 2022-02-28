@@ -10,8 +10,8 @@
   "dependencies": {
     "framer-motion": "^6.2.8",
     "next": "9.4.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-mailchimp-form": "^1.0.2",
     "react-modal": "^3.14.4",
     "styled-components": "^5.3.3"
